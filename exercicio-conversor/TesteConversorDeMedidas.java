@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TesteConversorDeMedidas {
     public static void main(String[] args) {
         Scanner sa = new Scanner(System.in);
-        ConversorDeMedidas cm = new ConversorDeMedidas();
+        ConversorDeMedidas cm = new ConversorDeMedidas(); // não precisa de um construtor para alterar uma carcteristica
         System.out.println("Escreva um valor em centímetros: ");
         double centimetros = sa.nextDouble();
         System.out.println(centimetros + " em polegadas é " + cm.centimetrosParaPolegadas(centimetros));
