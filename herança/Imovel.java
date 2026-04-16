@@ -17,11 +17,11 @@ public class Imovel {
         this.id = id;
     }
 
-    public String getEnderco() {
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEnderco(String enderco) {
+    public void setEndereco(String endereco) {
         this.endereco = enderco;
     }
 
