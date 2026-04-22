@@ -41,7 +41,7 @@ public class Animal {
         habitat.setArea(area);
     }
     public void emitirSom(){
-
+        System.out.println("Saindo som");
     }
     public String getInfo(){ //toString (mostrar o texto)
         return "Nome: " + getNome() + "\nIdade: " + getIdade() + "\nHabitat: " + habitat.getDescricao();
