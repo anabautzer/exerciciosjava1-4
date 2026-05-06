@@ -6,10 +6,8 @@ public class ContaCorrente extends Conta{
 
     @Override
     public void sacar(double valor) {
-        if(saldo>=valor){
-            System.out.println("Sacando "+ valor);
-        } else {
-            System.out.println("Saldo insuficiente");
+        if(super.saldo>=valor){
+            super.saldo -= valor;
         }
     }
 
