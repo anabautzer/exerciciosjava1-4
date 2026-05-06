@@ -7,7 +7,9 @@ public abstract class Conta {
         this.saldo = saldo;
     }
     public void depositar(double valor){
-        System.out.println("Depositando " + valor);
+        if (valor > 0){
+            this.saldo += valor;
+        }
     }
     public abstract void sacar(double valor);
 }
