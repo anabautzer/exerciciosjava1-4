@@ -7,10 +7,8 @@ public class ContaPoupanca extends Conta{
 
     @Override
     public void sacar(double valor) {
-        if (saldo < valor) {
-            System.out.println("Saldo insuficiente");
-        } else {
-            System.out.println("Saque realizado: " + (valor - taxa));
+        if (super.saldo > valor + taxa) { // boa prática para saber de onde vem
+            super.saldo -= valor - taxa;
         }
     }
 }
